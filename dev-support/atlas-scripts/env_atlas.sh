@@ -16,12 +16,15 @@
 # limitations under the License.
 #
 
-export ATLAS_URL=http://localhost:21000
-export ATLAS_USER=username
-export ATLAS_PASS=password
+#export ATLAS_URL=http://localhost:21000
+#export ATLAS_USER=username
+#export ATLAS_PASS=password
+export ATLAS_URL=${ATLAS_URL:-"http://localhost:21000"}
+export ATLAS_USER=${ATLAS_USER:-"username"}
+export ATLAS_PASS=${ATLAS_PASS:-"password"}
 
 export JSON_FORMATTER="python -mjson.tool"
-export CURL_CMDLINE="curl -f "
+export CURL_CMDLINE="curl -fk "
 
 export DATA_DIR=data
 
